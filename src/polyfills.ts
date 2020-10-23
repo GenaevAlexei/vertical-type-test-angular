@@ -17,16 +17,32 @@
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
+ import 'core-js/es/symbol';
+ import 'core-js/es/object';
+ import 'core-js/es/function';
+ import 'core-js/es/parse-int';
+ import 'core-js/es/parse-float';
+ import 'core-js/es/number';
+ import 'core-js/es/math';
+ import 'core-js/es/string';
+ import 'core-js/es/date';
+ import 'core-js/es/array';
+ import 'core-js/es/regexp';
+ import 'core-js/es/map';
+ import 'core-js/es/weak-map';
+ import 'core-js/es/set';
+
+ import 'core-js/es/reflect';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-// import 'classlist.js';  // Run `npm install --save classlist.js`.
+import 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /**
  * Web Animations `@angular/platform-browser/animations`
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
  * Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
  */
-// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 /**
  * By default, zone.js will patch all possible macroTask and DomEvents
@@ -61,3 +77,25 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import 'mdn-polyfills/Object.assign';
+import 'mdn-polyfills/Object.create';
+import 'mdn-polyfills/Object.entries';
+import 'mdn-polyfills/Array.from';
+import 'mdn-polyfills/Array.of';
+import 'mdn-polyfills/Array.prototype.find';
+import 'mdn-polyfills/Array.prototype.forEach';
+import 'mdn-polyfills/Array.prototype.filter';
+import 'mdn-polyfills/Array.prototype.findIndex';
+import 'mdn-polyfills/Array.prototype.includes';
+import 'mdn-polyfills/String.prototype.includes';
+import 'mdn-polyfills/String.prototype.repeat';
+import 'mdn-polyfills/String.prototype.startsWith';
+import 'mdn-polyfills/String.prototype.endsWith';
+import 'mdn-polyfills/String.prototype.padStart';
+import 'mdn-polyfills/String.prototype.padEnd';
+import 'mdn-polyfills/Function.prototype.bind';
+import 'mdn-polyfills/NodeList.prototype.forEach';
+import 'mdn-polyfills/Element.prototype.closest';
+import 'mdn-polyfills/Element.prototype.matches';
+import 'mdn-polyfills/MouseEvent';
+import 'mdn-polyfills/CustomEvent';
